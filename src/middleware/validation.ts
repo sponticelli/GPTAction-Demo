@@ -4,7 +4,7 @@ import { ApiResponse } from '../types';
 /**
  * Validate campaign filters
  */
-export const validateCampaignFilters = (req: Request, res: Response, next: NextFunction) => {
+export const validateCampaignFilters = (req: Request, res: Response, next: NextFunction): void => {
   const errors: string[] = [];
 
   // Validate store enum
@@ -59,7 +59,7 @@ export const validateCampaignFilters = (req: Request, res: Response, next: NextF
 /**
  * Validate pagination parameters
  */
-export const validatePagination = (req: Request, res: Response, next: NextFunction) => {
+export const validatePagination = (req: Request, res: Response, next: NextFunction): void => {
   const errors: string[] = [];
 
   if (req.query.page) {
@@ -82,7 +82,8 @@ export const validatePagination = (req: Request, res: Response, next: NextFuncti
       error: 'Validation error',
       message: errors.join(', '),
     };
-    return res.status(400).json(response);
+    res.status(400).json(response);
+    return;
   }
 
   next();
@@ -91,7 +92,7 @@ export const validatePagination = (req: Request, res: Response, next: NextFuncti
 /**
  * Validate aggregate filters
  */
-export const validateAggregateFilters = (req: Request, res: Response, next: NextFunction) => {
+export const validateAggregateFilters = (req: Request, res: Response, next: NextFunction): void => {
   const errors: string[] = [];
 
   // Required fields
@@ -119,7 +120,8 @@ export const validateAggregateFilters = (req: Request, res: Response, next: Next
       error: 'Validation error',
       message: errors.join(', '),
     };
-    return res.status(400).json(response);
+    res.status(400).json(response);
+    return;
   }
 
   next();
@@ -128,7 +130,7 @@ export const validateAggregateFilters = (req: Request, res: Response, next: Next
 /**
  * Validate export filters
  */
-export const validateExportFilters = (req: Request, res: Response, next: NextFunction) => {
+export const validateExportFilters = (req: Request, res: Response, next: NextFunction): void => {
   const errors: string[] = [];
 
   if (!req.query.format) {
@@ -143,7 +145,8 @@ export const validateExportFilters = (req: Request, res: Response, next: NextFun
       error: 'Validation error',
       message: errors.join(', '),
     };
-    return res.status(400).json(response);
+    res.status(400).json(response);
+    return;
   }
 
   next();

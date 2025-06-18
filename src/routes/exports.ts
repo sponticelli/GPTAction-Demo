@@ -10,7 +10,7 @@ const exportService = new ExportService();
  * GET /exports
  * Export filtered campaigns as CSV or JSON
  */
-router.get('/', validateExportFilters, async (req: Request, res: Response) => {
+router.get('/', validateExportFilters, async (req: Request, res: Response): Promise<void> => {
   try {
     const filters: ExportFilters = {
       format: req.query.format as 'csv' | 'json',

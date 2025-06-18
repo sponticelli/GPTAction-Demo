@@ -9,7 +9,7 @@ export const errorHandler = (
   req: Request,
   res: Response,
   next: NextFunction
-) => {
+): void => {
   console.error('Error occurred:', {
     message: error.message,
     stack: error.stack,
@@ -30,7 +30,7 @@ export const errorHandler = (
 /**
  * 404 Not Found handler
  */
-export const notFoundHandler = (req: Request, res: Response) => {
+export const notFoundHandler = (req: Request, res: Response): void => {
   const response: ApiResponse<null> = {
     success: false,
     error: 'Not found',
@@ -43,9 +43,9 @@ export const notFoundHandler = (req: Request, res: Response) => {
 /**
  * Request logging middleware
  */
-export const requestLogger = (req: Request, res: Response, next: NextFunction) => {
+export const requestLogger = (req: Request, res: Response, next: NextFunction): void => {
   const start = Date.now();
-  
+
   res.on('finish', () => {
     const duration = Date.now() - start;
     console.log(`${req.method} ${req.path} - ${res.statusCode} - ${duration}ms`);

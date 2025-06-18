@@ -10,7 +10,7 @@ const metricsService = new MetricsService();
  * GET /metrics/aggregate
  * Get aggregated campaign metrics grouped by dimensions
  */
-router.get('/aggregate', validateAggregateFilters, async (req: Request, res: Response) => {
+router.get('/aggregate', validateAggregateFilters, async (req: Request, res: Response): Promise<void> => {
   try {
     const filters: AggregateFilters = {
       group_by: req.query.group_by as 'month' | 'network' | 'store' | 'campaign_name',

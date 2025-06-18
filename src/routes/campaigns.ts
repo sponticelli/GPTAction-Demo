@@ -10,7 +10,7 @@ const campaignService = new CampaignService();
  * GET /campaigns
  * Retrieve a paginated list of campaign performance records with filters
  */
-router.get('/', validateCampaignFilters, validatePagination, async (req: Request, res: Response) => {
+router.get('/', validateCampaignFilters, validatePagination, async (req: Request, res: Response): Promise<void> => {
   try {
     const filters: CampaignFilters = {
       game: req.query.game as string,
@@ -51,7 +51,7 @@ router.get('/', validateCampaignFilters, validatePagination, async (req: Request
  * GET /campaigns/:id
  * Get a specific campaign record by ID
  */
-router.get('/:id', async (req: Request, res: Response) => {
+router.get('/:id', async (req: Request, res: Response): Promise<void> => {
   try {
     const { id } = req.params;
 
@@ -61,7 +61,8 @@ router.get('/:id', async (req: Request, res: Response) => {
         error: 'Bad request',
         message: 'Campaign ID is required',
       };
-      return res.status(400).json(response);
+      res.status(400).json(response);
+      return;
     }
 
     const campaign: Campaign | null = await campaignService.getCampaignById(id);
@@ -72,7 +73,8 @@ router.get('/:id', async (req: Request, res: Response) => {
         error: 'Not found',
         message: 'Campaign not found',
       };
-      return res.status(404).json(response);
+      res.status(404).json(response);
+      return;
     }
 
     const response: ApiResponse<Campaign> = {
