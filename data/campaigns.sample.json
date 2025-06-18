@@ -1,0 +1,112 @@
+[
+  {
+    "id": "camp_001",
+    "game": "Adventure Quest",
+    "campaign_name": "iOS Launch Campaign",
+    "network": "Facebook",
+    "store": "ios",
+    "month": "2024-01",
+    "acquired_users": 1500,
+    "cpi": 2.75,
+    "roas": {
+      "ROAS d0": "0.18",
+      "ROAS d7": "0.52",
+      "ROAS d30": "1.35",
+      "ROAS d365": "3.80"
+    },
+    "retention": {
+      "Retention d0": "100%",
+      "Retention d7": "28%",
+      "Retention d30": "14%",
+      "Retention d365": "6%"
+    }
+  },
+  {
+    "id": "camp_002",
+    "game": "Adventure Quest",
+    "campaign_name": "Android Launch Campaign",
+    "network": "Google Ads",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 2200,
+    "cpi": 1.95,
+    "roas": {
+      "ROAS d0": "0.22",
+      "ROAS d7": "0.68",
+      "ROAS d30": "1.58",
+      "ROAS d365": "4.25"
+    },
+    "retention": {
+      "Retention d0": "100%",
+      "Retention d7": "32%",
+      "Retention d30": "16%",
+      "Retention d365": "8%"
+    }
+  },
+  {
+    "id": "camp_003",
+    "game": "Puzzle Master",
+    "campaign_name": "Holiday Special",
+    "network": "TikTok",
+    "store": "ios",
+    "month": "2024-02",
+    "acquired_users": 980,
+    "cpi": 3.20,
+    "roas": {
+      "ROAS d0": "0.15",
+      "ROAS d7": "0.45",
+      "ROAS d30": "1.12",
+      "ROAS d365": "3.20"
+    },
+    "retention": {
+      "Retention d0": "100%",
+      "Retention d7": "25%",
+      "Retention d30": "12%",
+      "Retention d365": "5%"
+    }
+  },
+  {
+    "id": "camp_004",
+    "game": "Puzzle Master",
+    "campaign_name": "Valentine's Day",
+    "network": "Snapchat",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 1750,
+    "cpi": 2.40,
+    "roas": {
+      "ROAS d0": "0.20",
+      "ROAS d7": "0.58",
+      "ROAS d30": "1.42",
+      "ROAS d365": "3.95"
+    },
+    "retention": {
+      "Retention d0": "100%",
+      "Retention d7": "30%",
+      "Retention d30": "15%",
+      "Retention d365": "7%"
+    }
+  },
+  {
+    "id": "camp_005",
+    "game": "Racing Thunder",
+    "campaign_name": "Speed Demons",
+    "network": "Unity Ads",
+    "store": "ios",
+    "month": "2024-03",
+    "acquired_users": 3200,
+    "cpi": 1.85,
+    "roas": {
+      "ROAS d0": "0.25",
+      "ROAS d7": "0.72",
+      "ROAS d30": "1.68",
+      "ROAS d365": "4.50"
+    },
+    "retention": {
+      "Retention d0": "100%",
+      "Retention d7": "35%",
+      "Retention d30": "18%",
+      "Retention d365": "9%"
+    }
+  }
+]

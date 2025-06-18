@@ -1,0 +1,2474 @@
+[
+  {
+    "game": "chess",
+    "campaign_name": "DE - CH - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-07",
+    "acquired_users": 29,
+    "cpi": 8.59,
+    "roas": {
+      "ROAS d0": "0.30%",
+      "ROAS d7": "0.90%",
+      "ROAS d30": "2.04%",
+      "ROAS d365": "13.09% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "76.04%",
+      "Retention d7": "10.87%",
+      "Retention d30": "14.26%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - KL - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-07",
+    "acquired_users": 29,
+    "cpi": 12.97,
+    "roas": {
+      "ROAS d0": "0.45%",
+      "ROAS d7": "1.37%",
+      "ROAS d30": "3.08%",
+      "ROAS d365": "19.77% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "16.40%",
+      "Retention d30": "21.52%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - RV - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-07",
+    "acquired_users": 29,
+    "cpi": 12.96,
+    "roas": {
+      "ROAS d0": "0.45%",
+      "ROAS d7": "1.37%",
+      "ROAS d30": "3.07%",
+      "ROAS d365": "19.75% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "16.39%",
+      "Retention d30": "21.51%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - PK - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-07",
+    "acquired_users": 29,
+    "cpi": 12.84,
+    "roas": {
+      "ROAS d0": "0.44%",
+      "ROAS d7": "1.35%",
+      "ROAS d30": "3.05%",
+      "ROAS d365": "19.58% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "16.24%",
+      "Retention d30": "21.31%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - CH - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-08",
+    "acquired_users": 30,
+    "cpi": 18.19,
+    "roas": {
+      "ROAS d0": "0.15%",
+      "ROAS d7": "1.63%",
+      "ROAS d30": "5.24%",
+      "ROAS d365": "25.18% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "36.23%",
+      "Retention d30": "27.17%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - KL - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-08",
+    "acquired_users": 30,
+    "cpi": 17.0,
+    "roas": {
+      "ROAS d0": "0.14%",
+      "ROAS d7": "1.52%",
+      "ROAS d30": "4.90%",
+      "ROAS d365": "23.54% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "33.86%",
+      "Retention d30": "25.39%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - RV - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-08",
+    "acquired_users": 30,
+    "cpi": 15.55,
+    "roas": {
+      "ROAS d0": "0.13%",
+      "ROAS d7": "1.39%",
+      "ROAS d30": "4.48%",
+      "ROAS d365": "21.52% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "92.88%",
+      "Retention d7": "30.96%",
+      "Retention d30": "23.22%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - PK - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-08",
+    "acquired_users": 30,
+    "cpi": 20.87,
+    "roas": {
+      "ROAS d0": "0.17%",
+      "ROAS d7": "1.87%",
+      "ROAS d30": "6.01%",
+      "ROAS d365": "28.89% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "41.56%",
+      "Retention d30": "31.18%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - CPI - Android - CH - CHOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 448,
+    "cpi": 2.57,
+    "roas": {
+      "ROAS d0": "0.18%",
+      "ROAS d7": "2.23%",
+      "ROAS d30": "4.99%",
+      "ROAS d365": "23.95%"
+    },
+    "retention": {
+      "Retention d0": "88.07%",
+      "Retention d7": "18.09%",
+      "Retention d30": "10.82%",
+      "Retention d365": "3.27%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - CPI - Android - KL - KLOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 448,
+    "cpi": 3.08,
+    "roas": {
+      "ROAS d0": "0.21%",
+      "ROAS d7": "2.67%",
+      "ROAS d30": "5.99%",
+      "ROAS d365": "28.73%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "21.71%",
+      "Retention d30": "12.98%",
+      "Retention d365": "3.92%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - CPI - Android - RV - RVOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 448,
+    "cpi": 3.09,
+    "roas": {
+      "ROAS d0": "0.21%",
+      "ROAS d7": "2.68%",
+      "ROAS d30": "6.00%",
+      "ROAS d365": "28.78%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "21.74%",
+      "Retention d30": "13.00%",
+      "Retention d365": "3.93%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - CPI - Android - PK - PKOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 448,
+    "cpi": 3.28,
+    "roas": {
+      "ROAS d0": "0.22%",
+      "ROAS d7": "2.84%",
+      "ROAS d30": "6.37%",
+      "ROAS d365": "30.54%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "23.07%",
+      "Retention d30": "13.79%",
+      "Retention d365": "4.17%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - CPI - Android - CH - CHOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 524,
+    "cpi": 3.1,
+    "roas": {
+      "ROAS d0": "0.11%",
+      "ROAS d7": "0.94%",
+      "ROAS d30": "4.33%",
+      "ROAS d365": "23.40%"
+    },
+    "retention": {
+      "Retention d0": "95.73%",
+      "Retention d7": "19.07%",
+      "Retention d30": "14.01%",
+      "Retention d365": "2.86%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - CPI - Android - KL - KLOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 524,
+    "cpi": 3.5,
+    "roas": {
+      "ROAS d0": "0.12%",
+      "ROAS d7": "1.06%",
+      "ROAS d30": "4.88%",
+      "ROAS d365": "26.41%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "21.52%",
+      "Retention d30": "15.81%",
+      "Retention d365": "3.23%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - CPI - Android - RV - RVOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 524,
+    "cpi": 2.61,
+    "roas": {
+      "ROAS d0": "0.09%",
+      "ROAS d7": "0.79%",
+      "ROAS d30": "3.65%",
+      "ROAS d365": "19.73%"
+    },
+    "retention": {
+      "Retention d0": "80.72%",
+      "Retention d7": "16.08%",
+      "Retention d30": "11.81%",
+      "Retention d365": "2.41%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - CPI - Android - PK - PKOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 524,
+    "cpi": 2.82,
+    "roas": {
+      "ROAS d0": "0.10%",
+      "ROAS d7": "0.85%",
+      "ROAS d30": "3.93%",
+      "ROAS d365": "21.24%"
+    },
+    "retention": {
+      "Retention d0": "86.91%",
+      "Retention d7": "17.31%",
+      "Retention d30": "12.71%",
+      "Retention d365": "2.60%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - CPI - Android - CH - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 656,
+    "cpi": 1.73,
+    "roas": {
+      "ROAS d0": "0.08%",
+      "ROAS d7": "0.59%",
+      "ROAS d30": "2.85%",
+      "ROAS d365": "33.21%"
+    },
+    "retention": {
+      "Retention d0": "94.84%",
+      "Retention d7": "9.54%",
+      "Retention d30": "5.47%",
+      "Retention d365": "1.96%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - CPI - Android - KL - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 656,
+    "cpi": 1.71,
+    "roas": {
+      "ROAS d0": "0.07%",
+      "ROAS d7": "0.58%",
+      "ROAS d30": "2.81%",
+      "ROAS d365": "32.78%"
+    },
+    "retention": {
+      "Retention d0": "93.59%",
+      "Retention d7": "9.42%",
+      "Retention d30": "5.40%",
+      "Retention d365": "1.94%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - CPI - Android - RV - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 656,
+    "cpi": 1.58,
+    "roas": {
+      "ROAS d0": "0.07%",
+      "ROAS d7": "0.54%",
+      "ROAS d30": "2.59%",
+      "ROAS d365": "30.24%"
+    },
+    "retention": {
+      "Retention d0": "86.36%",
+      "Retention d7": "8.69%",
+      "Retention d30": "4.98%",
+      "Retention d365": "1.79%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - CPI - Android - PK - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 656,
+    "cpi": 1.56,
+    "roas": {
+      "ROAS d0": "0.07%",
+      "ROAS d7": "0.53%",
+      "ROAS d30": "2.56%",
+      "ROAS d365": "29.89%"
+    },
+    "retention": {
+      "Retention d0": "85.36%",
+      "Retention d7": "8.59%",
+      "Retention d30": "4.93%",
+      "Retention d365": "1.77%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - CPI - Android - CH - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 2026,
+    "cpi": 2.88,
+    "roas": {
+      "ROAS d0": "0.05%",
+      "ROAS d7": "0.35%",
+      "ROAS d30": "1.08%",
+      "ROAS d365": "19.88%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "9.97%",
+      "Retention d30": "5.27%",
+      "Retention d365": "1.92%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - CPI - Android - KL - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 2026,
+    "cpi": 1.88,
+    "roas": {
+      "ROAS d0": "0.03%",
+      "ROAS d7": "0.23%",
+      "ROAS d30": "0.71%",
+      "ROAS d365": "12.93%"
+    },
+    "retention": {
+      "Retention d0": "75.05%",
+      "Retention d7": "6.48%",
+      "Retention d30": "3.43%",
+      "Retention d365": "1.25%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - CPI - Android - RV - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 2026,
+    "cpi": 2.47,
+    "roas": {
+      "ROAS d0": "0.04%",
+      "ROAS d7": "0.30%",
+      "ROAS d30": "0.93%",
+      "ROAS d365": "17.03%"
+    },
+    "retention": {
+      "Retention d0": "98.85%",
+      "Retention d7": "8.54%",
+      "Retention d30": "4.52%",
+      "Retention d365": "1.64%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - CPI - Android - PK - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 2026,
+    "cpi": 3.05,
+    "roas": {
+      "ROAS d0": "0.05%",
+      "ROAS d7": "0.37%",
+      "ROAS d30": "1.15%",
+      "ROAS d365": "21.05%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "10.56%",
+      "Retention d30": "5.58%",
+      "Retention d365": "2.03%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - CPI - Android - CH - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 1256,
+    "cpi": 3.27,
+    "roas": {
+      "ROAS d0": "0.48%",
+      "ROAS d7": "1.58%",
+      "ROAS d30": "4.73%",
+      "ROAS d365": "19.14%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "11.06%",
+      "Retention d30": "6.26%",
+      "Retention d365": "2.86%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - CPI - Android - KL - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 1256,
+    "cpi": 2.32,
+    "roas": {
+      "ROAS d0": "0.34%",
+      "ROAS d7": "1.12%",
+      "ROAS d30": "3.36%",
+      "ROAS d365": "13.60%"
+    },
+    "retention": {
+      "Retention d0": "81.74%",
+      "Retention d7": "7.86%",
+      "Retention d30": "4.45%",
+      "Retention d365": "2.04%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - CPI - Android - RV - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 1256,
+    "cpi": 2.94,
+    "roas": {
+      "ROAS d0": "0.43%",
+      "ROAS d7": "1.42%",
+      "ROAS d30": "4.25%",
+      "ROAS d365": "17.23%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "9.96%",
+      "Retention d30": "5.63%",
+      "Retention d365": "2.58%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - CPI - Android - PK - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 1256,
+    "cpi": 3.12,
+    "roas": {
+      "ROAS d0": "0.46%",
+      "ROAS d7": "1.51%",
+      "ROAS d30": "4.52%",
+      "ROAS d365": "18.30%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "10.58%",
+      "Retention d30": "5.98%",
+      "Retention d365": "2.74%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - CPI - Android - CH - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-04",
+    "acquired_users": 18,
+    "cpi": 0.26,
+    "roas": {
+      "ROAS d0": "2.26%",
+      "ROAS d7": "23.55%",
+      "ROAS d30": "125.02%"
+    },
+    "retention": {
+      "Retention d0": "86.15%",
+      "Retention d7": "47.00%",
+      "Retention d30": "51.69%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - CPI - Android - KL - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-04",
+    "acquired_users": 18,
+    "cpi": 0.28,
+    "roas": {
+      "ROAS d0": "2.45%",
+      "ROAS d7": "25.56%",
+      "ROAS d30": "135.67%"
+    },
+    "retention": {
+      "Retention d0": "93.49%",
+      "Retention d7": "51.00%",
+      "Retention d30": "56.09%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - CPI - Android - RV - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-04",
+    "acquired_users": 18,
+    "cpi": 0.28,
+    "roas": {
+      "ROAS d0": "2.46%",
+      "ROAS d7": "25.63%",
+      "ROAS d30": "136.06%"
+    },
+    "retention": {
+      "Retention d0": "93.76%",
+      "Retention d7": "51.15%",
+      "Retention d30": "56.25%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - CPI - Android - PK - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-04",
+    "acquired_users": 18,
+    "cpi": 0.23,
+    "roas": {
+      "ROAS d0": "1.98%",
+      "ROAS d7": "20.68%",
+      "ROAS d30": "109.77%"
+    },
+    "retention": {
+      "Retention d0": "75.64%",
+      "Retention d7": "41.26%",
+      "Retention d30": "45.39%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - Install - Android - CH Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 980,
+    "cpi": 3.21,
+    "roas": {
+      "ROAS d0": "0.07%",
+      "ROAS d7": "0.51%",
+      "ROAS d30": "1.13%",
+      "ROAS d365": "23.79%"
+    },
+    "retention": {
+      "Retention d0": "88.52%",
+      "Retention d7": "10.30%",
+      "Retention d30": "5.15%",
+      "Retention d365": "0.83%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - Install - Android - KL Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 980,
+    "cpi": 3.63,
+    "roas": {
+      "ROAS d0": "0.08%",
+      "ROAS d7": "0.58%",
+      "ROAS d30": "1.28%",
+      "ROAS d365": "26.88%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "11.64%",
+      "Retention d30": "5.82%",
+      "Retention d365": "0.94%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - Install - Android - RV Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 980,
+    "cpi": 2.89,
+    "roas": {
+      "ROAS d0": "0.06%",
+      "ROAS d7": "0.46%",
+      "ROAS d30": "1.02%",
+      "ROAS d365": "21.42%"
+    },
+    "retention": {
+      "Retention d0": "79.70%",
+      "Retention d7": "9.27%",
+      "Retention d30": "4.64%",
+      "Retention d365": "0.75%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - Install - Android - PK Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 980,
+    "cpi": 3.75,
+    "roas": {
+      "ROAS d0": "0.08%",
+      "ROAS d7": "0.60%",
+      "ROAS d30": "1.33%",
+      "ROAS d365": "27.83%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "12.05%",
+      "Retention d30": "6.03%",
+      "Retention d365": "0.97%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - Install - Android - CH Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 2002,
+    "cpi": 4.63,
+    "roas": {
+      "ROAS d0": "0.06%",
+      "ROAS d7": "0.38%",
+      "ROAS d30": "1.31%",
+      "ROAS d365": "9.88%"
+    },
+    "retention": {
+      "Retention d0": "84.99%",
+      "Retention d7": "10.95%",
+      "Retention d30": "6.66%",
+      "Retention d365": "1.90%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - Install - Android - KL Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 2002,
+    "cpi": 5.62,
+    "roas": {
+      "ROAS d0": "0.07%",
+      "ROAS d7": "0.46%",
+      "ROAS d30": "1.59%",
+      "ROAS d365": "11.99%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "13.29%",
+      "Retention d30": "8.09%",
+      "Retention d365": "2.30%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - Install - Android - RV Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 2002,
+    "cpi": 5.43,
+    "roas": {
+      "ROAS d0": "0.07%",
+      "ROAS d7": "0.45%",
+      "ROAS d30": "1.53%",
+      "ROAS d365": "11.57%"
+    },
+    "retention": {
+      "Retention d0": "99.60%",
+      "Retention d7": "12.83%",
+      "Retention d30": "7.81%",
+      "Retention d365": "2.22%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - Install - Android - PK Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 2002,
+    "cpi": 6.64,
+    "roas": {
+      "ROAS d0": "0.09%",
+      "ROAS d7": "0.55%",
+      "ROAS d30": "1.88%",
+      "ROAS d365": "14.15%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "15.69%",
+      "Retention d30": "9.55%",
+      "Retention d365": "2.72%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - Install - Android - CH Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 1322,
+    "cpi": 3.52,
+    "roas": {
+      "ROAS d0": "0.12%",
+      "ROAS d7": "1.17%",
+      "ROAS d30": "2.63%",
+      "ROAS d365": "9.73%"
+    },
+    "retention": {
+      "Retention d0": "89.60%",
+      "Retention d7": "13.49%",
+      "Retention d30": "7.11%",
+      "Retention d365": "1.92%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - Install - Android - KL Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 1322,
+    "cpi": 3.81,
+    "roas": {
+      "ROAS d0": "0.13%",
+      "ROAS d7": "1.27%",
+      "ROAS d30": "2.85%",
+      "ROAS d365": "10.54%"
+    },
+    "retention": {
+      "Retention d0": "97.02%",
+      "Retention d7": "14.60%",
+      "Retention d30": "7.70%",
+      "Retention d365": "2.08%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - Install - Android - RV Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 1322,
+    "cpi": 4.6,
+    "roas": {
+      "ROAS d0": "0.15%",
+      "ROAS d7": "1.53%",
+      "ROAS d30": "3.44%",
+      "ROAS d365": "12.72%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "17.63%",
+      "Retention d30": "9.30%",
+      "Retention d365": "2.51%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - Install - Android - PK Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 1322,
+    "cpi": 3.47,
+    "roas": {
+      "ROAS d0": "0.11%",
+      "ROAS d7": "1.16%",
+      "ROAS d30": "2.59%",
+      "ROAS d365": "9.58%"
+    },
+    "retention": {
+      "Retention d0": "88.25%",
+      "Retention d7": "13.28%",
+      "Retention d30": "7.01%",
+      "Retention d365": "1.89%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - Install - Android - CH Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-04",
+    "acquired_users": 2315,
+    "cpi": 6.41,
+    "roas": {
+      "ROAS d0": "0.24%",
+      "ROAS d7": "1.40%",
+      "ROAS d30": "2.88%",
+      "ROAS d365": "9.00%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "11.80%",
+      "Retention d30": "5.46%",
+      "Retention d365": "1.43%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - Install - Android - KL Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-04",
+    "acquired_users": 2315,
+    "cpi": 5.49,
+    "roas": {
+      "ROAS d0": "0.21%",
+      "ROAS d7": "1.20%",
+      "ROAS d30": "2.46%",
+      "ROAS d365": "7.70%"
+    },
+    "retention": {
+      "Retention d0": "90.21%",
+      "Retention d7": "10.09%",
+      "Retention d30": "4.67%",
+      "Retention d365": "1.23%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - Install - Android - RV Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-04",
+    "acquired_users": 2315,
+    "cpi": 6.8,
+    "roas": {
+      "ROAS d0": "0.26%",
+      "ROAS d7": "1.49%",
+      "ROAS d30": "3.05%",
+      "ROAS d365": "9.55%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "12.51%",
+      "Retention d30": "5.79%",
+      "Retention d365": "1.52%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - Install - Android - PK Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-04",
+    "acquired_users": 2315,
+    "cpi": 4.9,
+    "roas": {
+      "ROAS d0": "0.19%",
+      "ROAS d7": "1.07%",
+      "ROAS d30": "2.20%",
+      "ROAS d365": "6.88%"
+    },
+    "retention": {
+      "Retention d0": "80.54%",
+      "Retention d7": "9.01%",
+      "Retention d30": "4.17%",
+      "Retention d365": "1.10%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - Install - Android - CH Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-05",
+    "acquired_users": 1871,
+    "cpi": 6.73,
+    "roas": {
+      "ROAS d0": "0.39%",
+      "ROAS d7": "2.23%",
+      "ROAS d30": "4.42%",
+      "ROAS d365": "10.28%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "13.64%",
+      "Retention d30": "5.94%",
+      "Retention d365": "2.69%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - Install - Android - KL Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-05",
+    "acquired_users": 1871,
+    "cpi": 6.05,
+    "roas": {
+      "ROAS d0": "0.35%",
+      "ROAS d7": "2.00%",
+      "ROAS d30": "3.97%",
+      "ROAS d365": "9.23%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "12.25%",
+      "Retention d30": "5.33%",
+      "Retention d365": "2.41%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - Install - Android - RV Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-05",
+    "acquired_users": 1871,
+    "cpi": 6.53,
+    "roas": {
+      "ROAS d0": "0.38%",
+      "ROAS d7": "2.16%",
+      "ROAS d30": "4.29%",
+      "ROAS d365": "9.97%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "13.23%",
+      "Retention d30": "5.76%",
+      "Retention d365": "2.61%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - Install - Android - PK Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-05",
+    "acquired_users": 1871,
+    "cpi": 5.77,
+    "roas": {
+      "ROAS d0": "0.34%",
+      "ROAS d7": "1.91%",
+      "ROAS d30": "3.79%",
+      "ROAS d365": "8.81%"
+    },
+    "retention": {
+      "Retention d0": "96.43%",
+      "Retention d7": "11.70%",
+      "Retention d30": "5.09%",
+      "Retention d365": "2.30%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - Install - Android - CH Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-06",
+    "acquired_users": 1590,
+    "cpi": 4.73,
+    "roas": {
+      "ROAS d0": "0.49%",
+      "ROAS d7": "3.30%",
+      "ROAS d30": "8.99%",
+      "ROAS d365": "23.21% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "11.76%",
+      "Retention d30": "6.05%",
+      "Retention d365": "2.23%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - Install - Android - KL Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-06",
+    "acquired_users": 1590,
+    "cpi": 3.52,
+    "roas": {
+      "ROAS d0": "0.37%",
+      "ROAS d7": "2.46%",
+      "ROAS d30": "6.70%",
+      "ROAS d365": "17.30% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "78.33%",
+      "Retention d7": "8.76%",
+      "Retention d30": "4.51%",
+      "Retention d365": "1.66%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - Install - Android - RV Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-06",
+    "acquired_users": 1590,
+    "cpi": 5.22,
+    "roas": {
+      "ROAS d0": "0.55%",
+      "ROAS d7": "3.64%",
+      "ROAS d30": "9.93%",
+      "ROAS d365": "25.62% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "12.98%",
+      "Retention d30": "6.68%",
+      "Retention d365": "2.46%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - Install - Android - PK Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-06",
+    "acquired_users": 1590,
+    "cpi": 5.43,
+    "roas": {
+      "ROAS d0": "0.57%",
+      "ROAS d7": "3.79%",
+      "ROAS d30": "10.32%",
+      "ROAS d365": "26.64% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "13.49%",
+      "Retention d30": "6.95%",
+      "Retention d365": "2.56%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - Install - Android - CH Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-07",
+    "acquired_users": 649,
+    "cpi": 3.35,
+    "roas": {
+      "ROAS d0": "1.58%",
+      "ROAS d7": "10.56%",
+      "ROAS d30": "24.15%",
+      "ROAS d365": "42.17% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "15.06%",
+      "Retention d30": "8.43%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - Install - Android - KL Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-07",
+    "acquired_users": 649,
+    "cpi": 3.38,
+    "roas": {
+      "ROAS d0": "1.59%",
+      "ROAS d7": "10.63%",
+      "ROAS d30": "24.31%",
+      "ROAS d365": "42.45% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "15.16%",
+      "Retention d30": "8.49%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - Install - Android - RV Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-07",
+    "acquired_users": 649,
+    "cpi": 3.03,
+    "roas": {
+      "ROAS d0": "1.42%",
+      "ROAS d7": "9.54%",
+      "ROAS d30": "21.80%",
+      "ROAS d365": "38.07% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "96.73%",
+      "Retention d7": "13.60%",
+      "Retention d30": "7.61%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - Install - Android - PK Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-07",
+    "acquired_users": 649,
+    "cpi": 3.9,
+    "roas": {
+      "ROAS d0": "1.83%",
+      "ROAS d7": "12.27%",
+      "ROAS d30": "28.05%",
+      "ROAS d365": "48.98% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "17.50%",
+      "Retention d30": "9.79%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - Install - Android - CH Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-08",
+    "acquired_users": 16,
+    "cpi": 0.0,
+    "roas": {
+      "ROAS d0": "0.00%",
+      "ROAS d7": "0.00%",
+      "ROAS d30": "0.00%",
+      "ROAS d365": "0.00% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "96.25%",
+      "Retention d30": "57.75%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - Install - Android - KL Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-08",
+    "acquired_users": 16,
+    "cpi": 0.0,
+    "roas": {
+      "ROAS d0": "0.00%",
+      "ROAS d7": "0.00%",
+      "ROAS d30": "0.00%",
+      "ROAS d365": "0.00% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "92.55%",
+      "Retention d30": "55.53%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - Install - Android - RV Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-08",
+    "acquired_users": 16,
+    "cpi": 0.0,
+    "roas": {
+      "ROAS d0": "0.00%",
+      "ROAS d7": "0.00%",
+      "ROAS d30": "0.00%",
+      "ROAS d365": "0.00% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "94.07%",
+      "Retention d7": "78.39%",
+      "Retention d30": "47.04%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - Install - Android - PK Restart - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2024-08",
+    "acquired_users": 16,
+    "cpi": 0.0,
+    "roas": {
+      "ROAS d0": "0.00%",
+      "ROAS d7": "0.00%",
+      "ROAS d30": "0.00%",
+      "ROAS d365": "0.00% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "92.21%",
+      "Retention d30": "55.33%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 1015,
+    "cpi": 1.99,
+    "roas": {
+      "ROAS d0": "0.13%",
+      "ROAS d7": "0.56%",
+      "ROAS d30": "1.80%",
+      "ROAS d365": "18.36%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "11.24%",
+      "Retention d30": "5.27%",
+      "Retention d365": "1.79%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 1015,
+    "cpi": 1.59,
+    "roas": {
+      "ROAS d0": "0.10%",
+      "ROAS d7": "0.44%",
+      "ROAS d30": "1.44%",
+      "ROAS d365": "14.67%"
+    },
+    "retention": {
+      "Retention d0": "94.51%",
+      "Retention d7": "8.98%",
+      "Retention d30": "4.21%",
+      "Retention d365": "1.43%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 1015,
+    "cpi": 1.64,
+    "roas": {
+      "ROAS d0": "0.11%",
+      "ROAS d7": "0.46%",
+      "ROAS d30": "1.49%",
+      "ROAS d365": "15.21%"
+    },
+    "retention": {
+      "Retention d0": "97.99%",
+      "Retention d7": "9.31%",
+      "Retention d30": "4.36%",
+      "Retention d365": "1.48%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 1015,
+    "cpi": 2.0,
+    "roas": {
+      "ROAS d0": "0.13%",
+      "ROAS d7": "0.56%",
+      "ROAS d30": "1.81%",
+      "ROAS d365": "18.51%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "11.33%",
+      "Retention d30": "5.31%",
+      "Retention d365": "1.80%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 1133,
+    "cpi": 2.25,
+    "roas": {
+      "ROAS d0": "0.12%",
+      "ROAS d7": "1.41%",
+      "ROAS d30": "10.38%",
+      "ROAS d365": "40.53%"
+    },
+    "retention": {
+      "Retention d0": "96.52%",
+      "Retention d7": "9.66%",
+      "Retention d30": "4.85%",
+      "Retention d365": "2.12%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 1133,
+    "cpi": 2.34,
+    "roas": {
+      "ROAS d0": "0.12%",
+      "ROAS d7": "1.46%",
+      "ROAS d30": "10.77%",
+      "ROAS d365": "42.06%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "10.03%",
+      "Retention d30": "5.03%",
+      "Retention d365": "2.20%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 1133,
+    "cpi": 2.27,
+    "roas": {
+      "ROAS d0": "0.12%",
+      "ROAS d7": "1.42%",
+      "ROAS d30": "10.45%",
+      "ROAS d365": "40.83%"
+    },
+    "retention": {
+      "Retention d0": "97.23%",
+      "Retention d7": "9.73%",
+      "Retention d30": "4.88%",
+      "Retention d365": "2.14%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 1133,
+    "cpi": 1.98,
+    "roas": {
+      "ROAS d0": "0.10%",
+      "ROAS d7": "1.24%",
+      "ROAS d30": "9.11%",
+      "ROAS d365": "35.57%"
+    },
+    "retention": {
+      "Retention d0": "84.72%",
+      "Retention d7": "8.48%",
+      "Retention d30": "4.25%",
+      "Retention d365": "1.86%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-04",
+    "acquired_users": 1492,
+    "cpi": 3.91,
+    "roas": {
+      "ROAS d0": "0.18%",
+      "ROAS d7": "0.76%",
+      "ROAS d30": "1.70%",
+      "ROAS d365": "6.64%"
+    },
+    "retention": {
+      "Retention d0": "94.68%",
+      "Retention d7": "10.16%",
+      "Retention d30": "4.35%",
+      "Retention d365": "1.81%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-04",
+    "acquired_users": 1492,
+    "cpi": 3.79,
+    "roas": {
+      "ROAS d0": "0.17%",
+      "ROAS d7": "0.73%",
+      "ROAS d30": "1.65%",
+      "ROAS d365": "6.43%"
+    },
+    "retention": {
+      "Retention d0": "91.77%",
+      "Retention d7": "9.85%",
+      "Retention d30": "4.21%",
+      "Retention d365": "1.75%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-04",
+    "acquired_users": 1492,
+    "cpi": 3.68,
+    "roas": {
+      "ROAS d0": "0.17%",
+      "ROAS d7": "0.71%",
+      "ROAS d30": "1.60%",
+      "ROAS d365": "6.24%"
+    },
+    "retention": {
+      "Retention d0": "89.08%",
+      "Retention d7": "9.56%",
+      "Retention d30": "4.09%",
+      "Retention d365": "1.70%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-04",
+    "acquired_users": 1492,
+    "cpi": 3.9,
+    "roas": {
+      "ROAS d0": "0.18%",
+      "ROAS d7": "0.75%",
+      "ROAS d30": "1.70%",
+      "ROAS d365": "6.61%"
+    },
+    "retention": {
+      "Retention d0": "94.33%",
+      "Retention d7": "10.12%",
+      "Retention d30": "4.33%",
+      "Retention d365": "1.80%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-05",
+    "acquired_users": 2433,
+    "cpi": 4.03,
+    "roas": {
+      "ROAS d0": "0.13%",
+      "ROAS d7": "0.58%",
+      "ROAS d30": "1.08%",
+      "ROAS d365": "3.75%"
+    },
+    "retention": {
+      "Retention d0": "86.31%",
+      "Retention d7": "8.03%",
+      "Retention d30": "3.27%",
+      "Retention d365": "1.23%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-05",
+    "acquired_users": 2433,
+    "cpi": 4.1,
+    "roas": {
+      "ROAS d0": "0.13%",
+      "ROAS d7": "0.59%",
+      "ROAS d30": "1.10%",
+      "ROAS d365": "3.82%"
+    },
+    "retention": {
+      "Retention d0": "87.89%",
+      "Retention d7": "8.17%",
+      "Retention d30": "3.33%",
+      "Retention d365": "1.26%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-05",
+    "acquired_users": 2433,
+    "cpi": 5.79,
+    "roas": {
+      "ROAS d0": "0.19%",
+      "ROAS d7": "0.83%",
+      "ROAS d30": "1.55%",
+      "ROAS d365": "5.40%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "11.54%",
+      "Retention d30": "4.70%",
+      "Retention d365": "1.77%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-05",
+    "acquired_users": 2433,
+    "cpi": 4.95,
+    "roas": {
+      "ROAS d0": "0.16%",
+      "ROAS d7": "0.71%",
+      "ROAS d30": "1.33%",
+      "ROAS d365": "4.61%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "9.86%",
+      "Retention d30": "4.02%",
+      "Retention d365": "1.52%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-06",
+    "acquired_users": 157,
+    "cpi": 5.5,
+    "roas": {
+      "ROAS d0": "0.41%",
+      "ROAS d7": "1.25%",
+      "ROAS d30": "2.92%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "16.36%",
+      "Retention d30": "9.78%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-06",
+    "acquired_users": 157,
+    "cpi": 4.7,
+    "roas": {
+      "ROAS d0": "0.35%",
+      "ROAS d7": "1.07%",
+      "ROAS d30": "2.50%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "13.97%",
+      "Retention d30": "8.35%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-06",
+    "acquired_users": 157,
+    "cpi": 4.85,
+    "roas": {
+      "ROAS d0": "0.36%",
+      "ROAS d7": "1.10%",
+      "ROAS d30": "2.57%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "14.41%",
+      "Retention d30": "8.61%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "DE - Install - Android - tCPI - Feb2024 - G",
+    "network": "googleadwords_int",
+    "store": "android",
+    "month": "2024-06",
+    "acquired_users": 157,
+    "cpi": 4.66,
+    "roas": {
+      "ROAS d0": "0.35%",
+      "ROAS d7": "1.06%",
+      "ROAS d30": "2.48%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "13.86%",
+      "Retention d30": "8.28%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "IS - CH - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-07",
+    "acquired_users": 6,
+    "cpi": 9.4,
+    "roas": {
+      "ROAS d0": "0.00%",
+      "ROAS d30": "0.00% (predicted)",
+      "ROAS d365": "0.00% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "75.19%",
+      "Retention d30": null,
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "IS - KL - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-07",
+    "acquired_users": 6,
+    "cpi": 12.68,
+    "roas": {
+      "ROAS d0": "0.00%",
+      "ROAS d30": "0.00% (predicted)",
+      "ROAS d365": "0.00% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d30": null,
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "IS - RV - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-07",
+    "acquired_users": 6,
+    "cpi": 15.0,
+    "roas": {
+      "ROAS d0": "0.00%",
+      "ROAS d30": "0.00% (predicted)",
+      "ROAS d365": "0.00% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d30": null,
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "IS - PK - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-07",
+    "acquired_users": 6,
+    "cpi": 15.1,
+    "roas": {
+      "ROAS d0": "0.00%",
+      "ROAS d30": "0.00% (predicted)",
+      "ROAS d365": "0.00% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d30": null,
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "IS - CH - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-08",
+    "acquired_users": 23,
+    "cpi": 7.23,
+    "roas": {
+      "ROAS d0": "0.08%",
+      "ROAS d7": "0.97%",
+      "ROAS d365": "4.72% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "87.13%",
+      "Retention d7": "29.04%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "IS - KL - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-08",
+    "acquired_users": 23,
+    "cpi": 8.84,
+    "roas": {
+      "ROAS d0": "0.10%",
+      "ROAS d7": "1.18%",
+      "ROAS d365": "5.77% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "35.51%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "IS - RV - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-08",
+    "acquired_users": 23,
+    "cpi": 8.13,
+    "roas": {
+      "ROAS d0": "0.09%",
+      "ROAS d7": "1.09%",
+      "ROAS d365": "5.31% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "98.05%",
+      "Retention d7": "32.68%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "IS - PK - Generic",
+    "network": "Apple Search Ads",
+    "store": "ios",
+    "month": "2024-08",
+    "acquired_users": 23,
+    "cpi": 9.68,
+    "roas": {
+      "ROAS d0": "0.11%",
+      "ROAS d7": "1.30%",
+      "ROAS d365": "6.32% (predicted)"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "38.89%",
+      "Retention d365": null
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "IT - Install - Android - Broad - CHSoftLaunch - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2023-10",
+    "acquired_users": 2552,
+    "cpi": 1.84,
+    "roas": {
+      "ROAS d0": "0.03%",
+      "ROAS d7": "0.23%",
+      "ROAS d30": "0.38%",
+      "ROAS d365": "2.33%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "2.60%",
+      "Retention d30": "1.61%",
+      "Retention d365": "0.92%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "IT - Install - Android - Broad - KLSoftLaunch - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2023-10",
+    "acquired_users": 2552,
+    "cpi": 1.68,
+    "roas": {
+      "ROAS d0": "0.03%",
+      "ROAS d7": "0.21%",
+      "ROAS d30": "0.34%",
+      "ROAS d365": "2.12%"
+    },
+    "retention": {
+      "Retention d0": "95.81%",
+      "Retention d7": "2.37%",
+      "Retention d30": "1.47%",
+      "Retention d365": "0.83%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "IT - Install - Android - Broad - RVSoftLaunch - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2023-10",
+    "acquired_users": 2552,
+    "cpi": 1.69,
+    "roas": {
+      "ROAS d0": "0.03%",
+      "ROAS d7": "0.21%",
+      "ROAS d30": "0.35%",
+      "ROAS d365": "2.14%"
+    },
+    "retention": {
+      "Retention d0": "96.63%",
+      "Retention d7": "2.39%",
+      "Retention d30": "1.48%",
+      "Retention d365": "0.84%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "IT - Install - Android - Broad - PKSoftLaunch - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2023-10",
+    "acquired_users": 2552,
+    "cpi": 1.37,
+    "roas": {
+      "ROAS d0": "0.02%",
+      "ROAS d7": "0.17%",
+      "ROAS d30": "0.28%",
+      "ROAS d365": "1.72%"
+    },
+    "retention": {
+      "Retention d0": "78.01%",
+      "Retention d7": "1.93%",
+      "Retention d30": "1.19%",
+      "Retention d365": "0.68%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "IT - Install - Android - Broad - CHSoftLaunch - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2023-11",
+    "acquired_users": 433,
+    "cpi": 1.92,
+    "roas": {
+      "ROAS d0": "0.05%",
+      "ROAS d7": "0.13%",
+      "ROAS d30": "0.26%"
+    },
+    "retention": {
+      "Retention d0": "97.39%",
+      "Retention d7": "5.35%",
+      "Retention d30": "3.55%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "IT - Install - Android - Broad - KLSoftLaunch - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2023-11",
+    "acquired_users": 433,
+    "cpi": 2.14,
+    "roas": {
+      "ROAS d0": "0.05%",
+      "ROAS d7": "0.14%",
+      "ROAS d30": "0.29%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "5.94%",
+      "Retention d30": "3.95%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "IT - Install - Android - Broad - RVSoftLaunch - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2023-11",
+    "acquired_users": 433,
+    "cpi": 1.87,
+    "roas": {
+      "ROAS d0": "0.05%",
+      "ROAS d7": "0.12%",
+      "ROAS d30": "0.26%"
+    },
+    "retention": {
+      "Retention d0": "94.47%",
+      "Retention d7": "5.19%",
+      "Retention d30": "3.45%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "IT - Install - Android - Broad - PKSoftLaunch - F",
+    "network": "Facebook Ads",
+    "store": "android",
+    "month": "2023-11",
+    "acquired_users": 433,
+    "cpi": 2.23,
+    "roas": {
+      "ROAS d0": "0.06%",
+      "ROAS d7": "0.15%",
+      "ROAS d30": "0.31%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "6.20%",
+      "Retention d30": "4.12%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "RO - CPI - Android - CH - CHOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 2356,
+    "cpi": 1.57,
+    "roas": {
+      "ROAS d0": "0.28%",
+      "ROAS d7": "1.72%",
+      "ROAS d30": "2.64%",
+      "ROAS d365": "16.69%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "27.29%",
+      "Retention d30": "15.76%",
+      "Retention d365": "3.55%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "RO - CPI - Android - KL - KLOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 2356,
+    "cpi": 1.49,
+    "roas": {
+      "ROAS d0": "0.27%",
+      "ROAS d7": "1.63%",
+      "ROAS d30": "2.51%",
+      "ROAS d365": "15.84%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "25.89%",
+      "Retention d30": "14.95%",
+      "Retention d365": "3.37%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "RO - CPI - Android - RV - RVOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 2356,
+    "cpi": 1.37,
+    "roas": {
+      "ROAS d0": "0.25%",
+      "ROAS d7": "1.50%",
+      "ROAS d30": "2.31%",
+      "ROAS d365": "14.58%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "23.83%",
+      "Retention d30": "13.76%",
+      "Retention d365": "3.10%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "RO - CPI - Android - PK - PKOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 2356,
+    "cpi": 1.33,
+    "roas": {
+      "ROAS d0": "0.24%",
+      "ROAS d7": "1.46%",
+      "ROAS d30": "2.24%",
+      "ROAS d365": "14.13%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "23.10%",
+      "Retention d30": "13.34%",
+      "Retention d365": "3.01%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "RO - CPI - Android - CH - CHOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 1125,
+    "cpi": 2.17,
+    "roas": {
+      "ROAS d0": "0.11%",
+      "ROAS d7": "0.86%",
+      "ROAS d30": "2.54%",
+      "ROAS d365": "11.16%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "24.56%",
+      "Retention d30": "14.63%",
+      "Retention d365": "3.23%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "RO - CPI - Android - KL - KLOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 1125,
+    "cpi": 2.37,
+    "roas": {
+      "ROAS d0": "0.12%",
+      "ROAS d7": "0.94%",
+      "ROAS d30": "2.76%",
+      "ROAS d365": "12.14%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "26.72%",
+      "Retention d30": "15.92%",
+      "Retention d365": "3.51%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "RO - CPI - Android - RV - RVOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 1125,
+    "cpi": 1.92,
+    "roas": {
+      "ROAS d0": "0.10%",
+      "ROAS d7": "0.76%",
+      "ROAS d30": "2.24%",
+      "ROAS d365": "9.84%"
+    },
+    "retention": {
+      "Retention d0": "95.21%",
+      "Retention d7": "21.67%",
+      "Retention d30": "12.91%",
+      "Retention d365": "2.85%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "RO - CPI - Android - PK - PKOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 1125,
+    "cpi": 1.69,
+    "roas": {
+      "ROAS d0": "0.08%",
+      "ROAS d7": "0.67%",
+      "ROAS d30": "1.97%",
+      "ROAS d365": "8.68%"
+    },
+    "retention": {
+      "Retention d0": "83.90%",
+      "Retention d7": "19.10%",
+      "Retention d30": "11.38%",
+      "Retention d365": "2.51%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "RO - CPI - Android - CH - CHOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 38,
+    "cpi": 0.13,
+    "roas": {
+      "ROAS d0": "1.41%",
+      "ROAS d7": "9.22%",
+      "ROAS d30": "41.21%"
+    },
+    "retention": {
+      "Retention d0": "91.20%",
+      "Retention d7": "53.46%",
+      "Retention d30": "54.72%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "RO - CPI - Android - KL - KLOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 38,
+    "cpi": 0.12,
+    "roas": {
+      "ROAS d0": "1.33%",
+      "ROAS d7": "8.71%",
+      "ROAS d30": "38.91%"
+    },
+    "retention": {
+      "Retention d0": "86.11%",
+      "Retention d7": "50.48%",
+      "Retention d30": "51.67%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "RO - CPI - Android - RV - RVOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 38,
+    "cpi": 0.17,
+    "roas": {
+      "ROAS d0": "1.84%",
+      "ROAS d7": "11.99%",
+      "ROAS d30": "53.60%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "69.54%",
+      "Retention d30": "71.18%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "RO - CPI - Android - PK - PKOnly - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-03",
+    "acquired_users": 38,
+    "cpi": 0.14,
+    "roas": {
+      "ROAS d0": "1.49%",
+      "ROAS d7": "9.72%",
+      "ROAS d30": "43.44%"
+    },
+    "retention": {
+      "Retention d0": "96.15%",
+      "Retention d7": "56.36%",
+      "Retention d30": "57.69%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "RO - CPI - Android - CH - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 2864,
+    "cpi": 0.95,
+    "roas": {
+      "ROAS d0": "0.13%",
+      "ROAS d7": "0.58%",
+      "ROAS d30": "1.27%",
+      "ROAS d365": "27.43%"
+    },
+    "retention": {
+      "Retention d0": "95.86%",
+      "Retention d7": "13.49%",
+      "Retention d30": "7.50%",
+      "Retention d365": "1.41%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "RO - CPI - Android - KL - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 2864,
+    "cpi": 1.05,
+    "roas": {
+      "ROAS d0": "0.15%",
+      "ROAS d7": "0.64%",
+      "ROAS d30": "1.40%",
+      "ROAS d365": "30.37%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "14.93%",
+      "Retention d30": "8.30%",
+      "Retention d365": "1.56%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "RO - CPI - Android - RV - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 2864,
+    "cpi": 1.18,
+    "roas": {
+      "ROAS d0": "0.17%",
+      "ROAS d7": "0.72%",
+      "ROAS d30": "1.58%",
+      "ROAS d365": "34.25%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "16.84%",
+      "Retention d30": "9.36%",
+      "Retention d365": "1.76%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "RO - CPI - Android - PK - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-01",
+    "acquired_users": 2864,
+    "cpi": 1.09,
+    "roas": {
+      "ROAS d0": "0.15%",
+      "ROAS d7": "0.66%",
+      "ROAS d30": "1.45%",
+      "ROAS d365": "31.48%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "15.48%",
+      "Retention d30": "8.60%",
+      "Retention d365": "1.62%"
+    }
+  },
+  {
+    "game": "chess",
+    "campaign_name": "RO - CPI - Android - CH - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 3230,
+    "cpi": 1.44,
+    "roas": {
+      "ROAS d0": "0.04%",
+      "ROAS d7": "0.21%",
+      "ROAS d30": "1.22%",
+      "ROAS d365": "9.61%"
+    },
+    "retention": {
+      "Retention d0": "93.31%",
+      "Retention d7": "11.52%",
+      "Retention d30": "5.51%",
+      "Retention d365": "1.46%"
+    }
+  },
+  {
+    "game": "klondike",
+    "campaign_name": "RO - CPI - Android - KL - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 3230,
+    "cpi": 1.55,
+    "roas": {
+      "ROAS d0": "0.04%",
+      "ROAS d7": "0.23%",
+      "ROAS d30": "1.32%",
+      "ROAS d365": "10.36%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "12.42%",
+      "Retention d30": "5.95%",
+      "Retention d365": "1.57%"
+    }
+  },
+  {
+    "game": "reversi",
+    "campaign_name": "RO - CPI - Android - RV - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 3230,
+    "cpi": 1.27,
+    "roas": {
+      "ROAS d0": "0.03%",
+      "ROAS d7": "0.19%",
+      "ROAS d30": "1.07%",
+      "ROAS d365": "8.45%"
+    },
+    "retention": {
+      "Retention d0": "82.01%",
+      "Retention d7": "10.13%",
+      "Retention d30": "4.85%",
+      "Retention d365": "1.28%"
+    }
+  },
+  {
+    "game": "poker",
+    "campaign_name": "RO - CPI - Android - PK - BoardGames - U",
+    "network": "unityads_int",
+    "store": "android",
+    "month": "2024-02",
+    "acquired_users": 3230,
+    "cpi": 1.9,
+    "roas": {
+      "ROAS d0": "0.05%",
+      "ROAS d7": "0.28%",
+      "ROAS d30": "1.61%",
+      "ROAS d365": "12.68%"
+    },
+    "retention": {
+      "Retention d0": "100.00%",
+      "Retention d7": "15.20%",
+      "Retention d30": "7.27%",
+      "Retention d365": "1.92%"
+    }
+  }
+]
