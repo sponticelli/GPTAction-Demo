@@ -7,12 +7,12 @@ info:
 servers:
   - url: https://gptaction-demo-production.up.railway.app/api/v1
     description: Production server
-  - url: http://localhost:3000/api/v1
-    description: Development server
+
 
 paths:
   /health:
     get:
+      operationId: getHealthStatus
       summary: Health check
       description: Check if the API is running and healthy.
       responses:
@@ -35,6 +35,7 @@ paths:
 
   /campaigns:
     get:
+      operationId: listCampaigns
       summary: List campaigns
       description: Retrieve a paginated list of campaign performance records with filters.
       parameters:
@@ -123,6 +124,7 @@ paths:
 
   /campaigns/{id}:
     get:
+      operationId: getCampaignById
       summary: Get single campaign
       description: Get a specific campaign record by ID.
       parameters:
@@ -176,6 +178,7 @@ paths:
 
   /metrics/aggregate:
     get:
+      operationId: getAggregatedMetrics
       summary: Aggregate metrics
       description: Get aggregated campaign metrics grouped by dimensions.
       parameters:
@@ -229,6 +232,7 @@ paths:
 
   /exports:
     get:
+      operationId: exportCampaigns
       summary: Export campaigns
       description: Export filtered campaigns as CSV or JSON.
       parameters:
