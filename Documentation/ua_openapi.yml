@@ -1,0 +1,253 @@
+openapi: 3.0.3
+info:
+  title: Campaign Performance API
+  description: API for UA Managers to query, aggregate, and export campaign performance data.
+  version: 1.0.0
+
+servers:
+  - url: https://api.example.com/v1
+
+paths:
+  /campaigns:
+    get:
+      summary: List campaigns
+      description: Retrieve a paginated list of campaign performance records with filters.
+      parameters:
+        - in: query
+          name: game
+          schema:
+            type: string
+        - in: query
+          name: network
+          schema:
+            type: string
+        - in: query
+          name: store
+          schema:
+            type: string
+            enum: [ios, android]
+        - in: query
+          name: campaign_name
+          schema:
+            type: string
+        - in: query
+          name: month_from
+          schema:
+            type: string
+            format: date
+        - in: query
+          name: month_to
+          schema:
+            type: string
+            format: date
+        - in: query
+          name: min_cpi
+          schema:
+            type: number
+        - in: query
+          name: max_cpi
+          schema:
+            type: number
+        - in: query
+          name: roas_day
+          schema:
+            type: integer
+            enum: [0, 7, 30, 365]
+        - in: query
+          name: min_roas
+          schema:
+            type: number
+        - in: query
+          name: max_roas
+          schema:
+            type: number
+        - in: query
+          name: page
+          schema:
+            type: integer
+            default: 1
+        - in: query
+          name: page_size
+          schema:
+            type: integer
+            default: 50
+      responses:
+        200:
+          description: Successful response with campaign list.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CampaignListResponse'
+
+  /campaigns/{id}:
+    get:
+      summary: Get single campaign
+      description: Get a specific campaign record by ID.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Successful response with campaign details.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Campaign'
+
+  /metrics/aggregate:
+    get:
+      summary: Aggregate metrics
+      description: Get aggregated campaign metrics grouped by dimensions.
+      parameters:
+        - in: query
+          name: group_by
+          required: true
+          schema:
+            type: string
+            enum: [month, network, store, campaign_name]
+        - in: query
+          name: metric
+          required: true
+          schema:
+            type: string
+            enum: [cpi, acquired_users, roas_d0, roas_d7, roas_d30, roas_d365, retention_d0, retention_d7, retention_d30, retention_d365]
+        - in: query
+          name: aggregation
+          required: true
+          schema:
+            type: string
+            enum: [sum, avg, min, max]
+        - in: query
+          name: filters
+          schema:
+            type: string
+            description: Optional filter expression.
+      responses:
+        200:
+          description: Aggregated metric results.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AggregateResponse'
+
+  /exports:
+    get:
+      summary: Export campaigns
+      description: Export filtered campaigns as CSV or JSON.
+      parameters:
+        - in: query
+          name: format
+          required: true
+          schema:
+            type: string
+            enum: [csv, json]
+        - in: query
+          name: filters
+          schema:
+            type: string
+      responses:
+        200:
+          description: Export link.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  url:
+                    type: string
+                    format: uri
+
+components:
+  schemas:
+    Campaign:
+      type: object
+      properties:
+        id:
+          type: string
+        game:
+          type: string
+        campaign_name:
+          type: string
+        network:
+          type: string
+        store:
+          type: string
+        month:
+          type: string
+        acquired_users:
+          type: integer
+        cpi:
+          type: number
+        roas:
+          type: object
+          properties:
+            ROAS d0:
+              type: string
+            ROAS d7:
+              type: string
+            ROAS d30:
+              type: string
+            ROAS d365:
+              type: string
+        retention:
+          type: object
+          properties:
+            Retention d0:
+              type: string
+            Retention d7:
+              type: string
+            Retention d30:
+              type: string
+            Retention d365:
+              type: string
+
+    CampaignListResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Campaign'
+        pagination:
+          type: object
+          properties:
+            page:
+              type: integer
+            page_size:
+              type: integer
+            total_pages:
+              type: integer
+            total_records:
+              type: integer
+
+    AggregateResponse:
+      type: object
+      properties:
+        group_by:
+          type: string
+        metric:
+          type: string
+        aggregation:
+          type: string
+        results:
+          type: array
+          items:
+            type: object
+            properties:
+              group:
+                type: string
+              value:
+                type: number
+
+security:
+  - ApiKeyAuth: []
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
