@@ -52,7 +52,17 @@ if (envSettings.isDevelopment) {
 // Custom request logging
 app.use(requestLogger);
 
-// Authentication middleware (optional in development)
+// Health check endpoint (public, no auth required)
+app.get('/api/v1/health', (req, res) => {
+  res.json({
+    success: true,
+    message: 'Campaign Performance API is running',
+    timestamp: new Date().toISOString(),
+    version: '1.0.0',
+  });
+});
+
+// Authentication middleware for all other API endpoints
 app.use('/api/v1', optionalAuth);
 
 // Static files for exports
