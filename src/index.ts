@@ -76,6 +76,9 @@ app.get('/api/v1/health', (req, res) => {
   });
 });
 
+// MCP routes (before general authentication)
+app.use('/api/v1/mcp', mcpRoutes);
+
 // Authentication middleware for all other API endpoints
 app.use('/api/v1', optionalAuth);
 
@@ -84,9 +87,6 @@ app.use('/exports', express.static(path.join(process.cwd(), 'exports')));
 
 // API routes
 app.use('/api/v1', routes);
-
-// MCP routes
-app.use('/api/v1/mcp', mcpRoutes);
 
 // Root endpoint
 app.get('/', (req, res) => {
