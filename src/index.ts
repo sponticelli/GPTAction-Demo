@@ -10,8 +10,15 @@ import { errorHandler, notFoundHandler, requestLogger } from './middleware/error
 import { optionalAuth } from './middleware/auth';
 import { loadConfig, getEnvironmentSettings } from './utils/config';
 
-// Load environment variables
+// Load environment variables from .env file (only if not already set)
+// This ensures Railway environment variables take precedence
 dotenv.config();
+
+// Override with Railway environment variables if they exist
+if (process.env.RAILWAY_ENVIRONMENT) {
+  // We're running on Railway, ensure production settings
+  process.env.NODE_ENV = process.env.NODE_ENV || 'production';
+}
 
 // Load configuration
 const config = loadConfig();
