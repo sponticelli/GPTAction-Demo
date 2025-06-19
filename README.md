@@ -10,9 +10,13 @@ A TypeScript API for UA Managers to query, aggregate, and export campaign perfor
 - **Data Export**: Export filtered campaign data as CSV or JSON
 - **Authentication**: API key-based authentication
 - **Type Safety**: Full TypeScript implementation with comprehensive type definitions
+- **MCP Server**: Model Context Protocol server for LLM integration (Claude, ChatGPT, Cursor, etc.)
+- **WebSocket Support**: Real-time connections for MCP clients
+- **JWT Authentication**: Secure token-based authentication for MCP clients
 
 ## API Endpoints
 
+### REST API
 Based on the OpenAPI specification in `Documentation/ua_openapi.yml`:
 
 - `GET /api/v1/campaigns` - List campaigns with filters and pagination
@@ -20,6 +24,16 @@ Based on the OpenAPI specification in `Documentation/ua_openapi.yml`:
 - `GET /api/v1/metrics/aggregate` - Get aggregated metrics
 - `GET /api/v1/exports` - Export campaigns as CSV or JSON
 - `GET /api/v1/health` - Health check endpoint
+
+### MCP Server Endpoints
+For LLM integration via Model Context Protocol:
+
+- `WebSocket /mcp` - MCP WebSocket connection
+- `POST /api/v1/mcp/auth/token` - Generate MCP access token
+- `POST /api/v1/mcp/auth/validate` - Validate MCP token
+- `GET /api/v1/mcp/tools` - List available MCP tools
+- `GET /api/v1/mcp/info` - MCP server information
+- `GET /api/v1/mcp/health` - MCP server health check
 
 ## Quick Start
 
@@ -144,6 +158,10 @@ The project includes:
 | `CORS_ORIGIN` | CORS allowed origins | `*` | No |
 | `DATA_FILE_PATH` | Path to campaigns JSON file | `./data/campaigns.json` | No |
 | `BASE_URL` | Base URL for export links | `http://localhost:3000` | No |
+| `MCP_JWT_SECRET` | JWT secret for MCP authentication | - | Yes (production) |
+| `MCP_AUTH_ENABLED` | Enable MCP authentication | `true` | No |
+| `MCP_ALLOWED_CLIENTS` | Allowed MCP client IDs | `claude,chatgpt,cursor,vscode,continue` | No |
+| `MCP_CORS_ORIGIN` | CORS origins for MCP | `https://claude.ai,https://chat.openai.com,https://cursor.sh` | No |
 
 ## API Usage Examples
 
@@ -166,6 +184,64 @@ curl "https://your-api.railway.app/api/v1/metrics/aggregate?group_by=network&met
 ```bash
 curl "https://your-api.railway.app/api/v1/exports?format=csv" \
   -H "X-API-Key: your-api-key"
+```
+
+## MCP Integration
+
+This API includes a Model Context Protocol (MCP) server that allows LLM applications to directly access campaign data.
+
+### Quick MCP Setup
+
+1. **Generate Access Token**:
+   ```bash
+   curl -X POST "https://your-app.up.railway.app/api/v1/mcp/auth/token" \
+     -H "Content-Type: application/json" \
+     -d '{"client_id": "claude"}'
+   ```
+
+2. **Connect from Claude Desktop**:
+   ```json
+   {
+     "mcpServers": {
+       "campaign-performance": {
+         "url": "wss://your-app.up.railway.app/mcp",
+         "auth": "Bearer YOUR_ACCESS_TOKEN"
+       }
+     }
+   }
+   ```
+
+3. **Available Tools**:
+   - `list_campaigns` - Query campaign data with filters
+   - `get_campaign` - Get specific campaign details
+   - `aggregate_metrics` - Aggregate metrics by dimensions
+   - `export_campaigns` - Export data as CSV/JSON
+   - `health_check` - Check API health
+
+For detailed MCP setup instructions, see [Documentation/MCP_CLIENT_GUIDE.md](Documentation/MCP_CLIENT_GUIDE.md).
+
+## Deployment
+
+### Railway.com
+
+1. **Connect Repository**: Link your GitHub repository to Railway
+2. **Set Environment Variables**: Configure `API_KEY`, `MCP_JWT_SECRET`, and other required variables
+3. **Deploy**: Railway will automatically build and deploy your application
+
+The application will be available at `https://your-app-name.up.railway.app`
+
+### Docker
+
+```bash
+# Build the image
+docker build -t campaign-performance-api .
+
+# Run the container
+docker run -p 3000:3000 \
+  -e API_KEY=your-api-key \
+  -e MCP_JWT_SECRET=your-mcp-secret \
+  -e NODE_ENV=production \
+  campaign-performance-api
 ```
 
 ## Development

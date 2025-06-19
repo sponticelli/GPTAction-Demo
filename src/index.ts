@@ -4,11 +4,15 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
 import path from 'path';
+import { createServer } from 'http';
 
 import routes from './routes';
+import mcpRoutes, { setMCPServer } from './routes/mcp';
 import { errorHandler, notFoundHandler, requestLogger } from './middleware/errorHandler';
 import { optionalAuth } from './middleware/auth';
 import { loadConfig, getEnvironmentSettings } from './utils/config';
+import { MCPServer } from './services/mcpServer';
+import { validateMCPEnvironment } from './config/mcp';
 
 // Load environment variables from .env file (only if not already set)
 // This ensures Railway environment variables take precedence
@@ -24,8 +28,18 @@ if (process.env.RAILWAY_ENVIRONMENT) {
 const config = loadConfig();
 const envSettings = getEnvironmentSettings();
 
+// Validate MCP environment
+const mcpValidation = validateMCPEnvironment();
+if (!mcpValidation.valid) {
+  console.warn('⚠️  MCP Environment validation warnings:');
+  mcpValidation.errors.forEach(error => console.warn(`   - ${error}`));
+}
+
 // Create Express application
 const app = express();
+
+// Create HTTP server for WebSocket support
+const server = createServer(app);
 
 // Security middleware
 if (envSettings.enableHelmet) {
@@ -71,6 +85,9 @@ app.use('/exports', express.static(path.join(process.cwd(), 'exports')));
 // API routes
 app.use('/api/v1', routes);
 
+// MCP routes
+app.use('/api/v1/mcp', mcpRoutes);
+
 // Root endpoint
 app.get('/', (req, res) => {
   res.json({
@@ -94,21 +111,36 @@ app.use(notFoundHandler);
 // Global error handler
 app.use(errorHandler);
 
+// Initialize MCP Server
+const mcpServer = new MCPServer();
+mcpServer.initialize(server);
+setMCPServer(mcpServer);
+
 // Start server
-const server = app.listen(config.port, () => {
+server.listen(config.port, () => {
   console.log(`🚀 Campaign Performance API running on port ${config.port}`);
   console.log(`📝 Environment: ${config.nodeEnv}`);
   console.log(`🔗 Base URL: http://localhost:${config.port}`);
   console.log(`📊 Health check: http://localhost:${config.port}/api/v1/health`);
-  
+  console.log(`🔌 MCP Server: ws://localhost:${config.port}/mcp`);
+  console.log(`🔑 MCP Auth: http://localhost:${config.port}/api/v1/mcp/auth/token`);
+  console.log(`📋 MCP Tools: http://localhost:${config.port}/api/v1/mcp/tools`);
+
   if (envSettings.isDevelopment) {
     console.log(`🔧 Development mode: Authentication is optional`);
+  }
+
+  if (mcpValidation.valid) {
+    console.log(`✅ MCP Server ready for client connections`);
+  } else {
+    console.log(`⚠️  MCP Server started with warnings (see above)`);
   }
 });
 
 // Graceful shutdown
 process.on('SIGTERM', () => {
   console.log('SIGTERM received, shutting down gracefully');
+  mcpServer.shutdown();
   server.close(() => {
     console.log('Process terminated');
     process.exit(0);
@@ -117,6 +149,7 @@ process.on('SIGTERM', () => {
 
 process.on('SIGINT', () => {
   console.log('SIGINT received, shutting down gracefully');
+  mcpServer.shutdown();
   server.close(() => {
     console.log('Process terminated');
     process.exit(0);
