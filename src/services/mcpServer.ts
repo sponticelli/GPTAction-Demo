@@ -140,6 +140,11 @@ export class MCPServer {
    */
   private async handleRequest(connection: MCPConnection, request: MCPRequest): Promise<MCPResponse | null> {
     try {
+      // Check for JWT authentication in request params (except for initialize)
+      if (this.config.auth.enabled && request.method !== 'initialize') {
+        await this.authenticateRequest(connection, request);
+      }
+
       switch (request.method) {
         case 'initialize':
           return await this.handleInitialize(connection, request as MCPInitializeRequest);
@@ -167,6 +172,33 @@ export class MCPServer {
         },
       };
     }
+  }
+
+  /**
+   * Authenticate request using JWT token
+   */
+  private async authenticateRequest(connection: MCPConnection, request: MCPRequest): Promise<void> {
+    const params = request.params as any;
+    const authToken = params?.auth?.token;
+
+    if (!authToken) {
+      throw new Error('Authentication token required');
+    }
+
+    // Validate JWT token
+    const user = await this.authService.validateToken(authToken);
+    if (!user) {
+      throw new Error('Invalid or expired authentication token');
+    }
+
+    // Update connection with authenticated user
+    this.authService.updateConnection(connection.id, {
+      authenticated: true,
+      userId: user.id,
+      permissions: user.permissions,
+    });
+
+    console.log(`🔐 User ${user.id} authenticated for connection ${connection.id}`);
   }
 
   /**
@@ -201,18 +233,6 @@ export class MCPServer {
    * Handle list tools request
    */
   private async handleListTools(connection: MCPConnection, request: MCPListToolsRequest): Promise<MCPResponse> {
-    // Check authentication for protected endpoints
-    if (this.config.auth.enabled && !connection.authenticated) {
-      return {
-        jsonrpc: '2.0',
-        id: request.id,
-        error: {
-          code: MCPErrorCode.Unauthorized,
-          message: 'Authentication required',
-        },
-      };
-    }
-
     const tools = this.toolsService.getTools();
     const response: MCPListToolsResponse = { tools };
 
@@ -227,21 +247,9 @@ export class MCPServer {
    * Handle call tool request
    */
   private async handleCallTool(connection: MCPConnection, request: MCPCallToolRequest): Promise<MCPResponse> {
-    // Check authentication
-    if (this.config.auth.enabled && !connection.authenticated) {
-      return {
-        jsonrpc: '2.0',
-        id: request.id,
-        error: {
-          code: MCPErrorCode.Unauthorized,
-          message: 'Authentication required',
-        },
-      };
-    }
-
-    // Check permissions
+    // Check permissions (authentication is already handled in handleRequest)
     const requiredPermission = this.getRequiredPermission(request.params.name);
-    if (requiredPermission && connection.userId) {
+    if (this.config.auth.enabled && requiredPermission && connection.userId) {
       const user = this.authService.getUser(connection.userId);
       if (!user || !this.authService.hasPermission(user, requiredPermission)) {
         return {

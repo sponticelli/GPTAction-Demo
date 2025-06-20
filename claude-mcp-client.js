@@ -15,36 +15,83 @@ class CampaignPerformanceMCP {
     this.requestId = 0;
     this.pendingRequests = new Map();
     this.initialized = false;
+    this.accessToken = null;
+    this.apiKey = process.env.API_KEY; 
   }
 
   async connect() {
-    return new Promise((resolve, reject) => {
-      console.error('Connecting to Campaign Performance MCP Server...');
-      
-      this.ws = new WebSocket(this.wsUrl);
-      
-      this.ws.on('open', () => {
-        console.error('WebSocket connection established');
-        this.initializeRemoteServer().then(() => {
-          this.initialized = true;
-          resolve();
-        }).catch(reject);
+    try {
+      // First, authenticate and get JWT token
+      await this.authenticate();
+
+      return new Promise((resolve, reject) => {
+        console.error('Connecting to Campaign Performance MCP Server...');
+
+        this.ws = new WebSocket(this.wsUrl);
+
+        this.ws.on('open', () => {
+          console.error('WebSocket connection established');
+          this.initializeRemoteServer().then(() => {
+            this.initialized = true;
+            resolve();
+          }).catch(reject);
+        });
+
+        this.ws.on('message', (data) => {
+          this.handleRemoteMessage(JSON.parse(data.toString()));
+        });
+
+        this.ws.on('error', (error) => {
+          console.error('WebSocket error:', error.message);
+          reject(error);
+        });
+
+        this.ws.on('close', () => {
+          console.error('WebSocket connection closed');
+          process.exit(0);
+        });
       });
-      
-      this.ws.on('message', (data) => {
-        this.handleRemoteMessage(JSON.parse(data.toString()));
+    } catch (error) {
+      console.error('Authentication failed:', error.message);
+      throw error;
+    }
+  }
+
+  async authenticate() {
+    const fetch = require('node-fetch');
+
+    try {
+      console.error('Authenticating with MCP server...');
+
+      const response = await fetch(`${this.baseUrl}/api/v1/mcp/auth/token`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-API-Key': this.apiKey
+        },
+        body: JSON.stringify({
+          client_id: 'claude',
+          scope: ['campaigns:read', 'campaigns:export', 'tools:call']
+        })
       });
-      
-      this.ws.on('error', (error) => {
-        console.error('WebSocket error:', error.message);
-        reject(error);
-      });
-      
-      this.ws.on('close', () => {
-        console.error('WebSocket connection closed');
-        process.exit(0);
-      });
-    });
+
+      if (!response.ok) {
+        throw new Error(`Authentication failed: ${response.status} ${response.statusText}`);
+      }
+
+      const authData = await response.json();
+
+      if (!authData.success) {
+        throw new Error(`Authentication failed: ${authData.message}`);
+      }
+
+      this.accessToken = authData.data.access_token;
+      console.error('Successfully authenticated with MCP server');
+
+    } catch (error) {
+      console.error('Failed to authenticate:', error.message);
+      throw error;
+    }
   }
 
   async initializeRemoteServer() {
@@ -56,7 +103,7 @@ class CampaignPerformanceMCP {
         version: '1.0.0'
       }
     });
-    
+
     console.error('Successfully connected to Campaign Performance MCP Server');
     return response;
   }
@@ -68,7 +115,13 @@ class CampaignPerformanceMCP {
         jsonrpc: '2.0',
         id,
         method,
-        params
+        params: {
+          ...params,
+          // Include authentication token for authenticated requests
+          ...(this.accessToken && method !== 'initialize' ? {
+            auth: { token: this.accessToken }
+          } : {})
+        }
       };
 
       this.pendingRequests.set(id, { resolve, reject });
