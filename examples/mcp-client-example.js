@@ -47,11 +47,7 @@ class MCPClient {
     console.log('🔌 Connecting to MCP server...');
     
     return new Promise((resolve, reject) => {
-      this.ws = new WebSocket(this.wsUrl, {
-        headers: {
-          'Authorization': `Bearer ${this.accessToken}`
-        }
-      });
+      this.ws = new WebSocket(this.wsUrl);
 
       this.ws.on('open', () => {
         console.log('✅ WebSocket connection established');

@@ -88,11 +88,7 @@ async function testMCPServer() {
 
 function testWebSocketConnection(accessToken) {
   return new Promise((resolve, reject) => {
-    const ws = new WebSocket(WS_URL, {
-      headers: {
-        'Authorization': `Bearer ${accessToken}`
-      }
-    });
+    const ws = new WebSocket(WS_URL);
 
     let testsPassed = 0;
     const totalTests = 3;
