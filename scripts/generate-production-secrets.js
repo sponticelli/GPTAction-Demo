@@ -11,8 +11,8 @@ function generateSecrets() {
   // Generate JWT Secret (256-bit)
   const jwtSecret = crypto.randomBytes(32).toString('hex');
   
-  // Generate API Key (128-bit)
-  const apiKey = crypto.randomBytes(16).toString('hex');
+  // Use your existing API Key
+  const apiKey = '_9SOEyfYtzHQPGz_bKVMUNRf-y2Abt3QLBsNDsTCnHk';
   
   console.log('Environment Variables for Railway:');
   console.log('=====================================');

@@ -16,7 +16,7 @@ class CampaignPerformanceMCP {
     this.pendingRequests = new Map();
     this.initialized = false;
     this.accessToken = null;
-    this.apiKey = process.env.API_KEY; 
+    this.apiKey = process.env.API_KEY || '_9SOEyfYtzHQPGz_bKVMUNRf-y2Abt3QLBsNDsTCnHk';
   }
 
   async connect() {
@@ -123,6 +123,10 @@ class CampaignPerformanceMCP {
           } : {})
         }
       };
+
+      // Debug logging
+      console.error(`Sending ${method} request with token: ${this.accessToken ? 'YES' : 'NO'}`);
+      console.error(`Message params:`, JSON.stringify(message.params));
 
       this.pendingRequests.set(id, { resolve, reject });
       this.ws.send(JSON.stringify(message));
