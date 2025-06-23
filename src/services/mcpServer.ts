@@ -91,19 +91,28 @@ export class MCPServer {
    * Handle incoming message
    */
   private async handleMessage(connectionId: string, data: WebSocket.Data): Promise<void> {
+    const connectionData = this.connections.get(connectionId);
+
+    if (!connectionData) {
+      console.warn(`⚠️ No connection data found for ${connectionId}`);
+      return;
+    }
+
+    const { ws, connection } = connectionData;
+
     try {
       const rawMessage = data.toString();
-      console.log(`📨 Received message from ${connectionId}:`, rawMessage);
+      console.log(`📨 [${connectionId}] Received:`, rawMessage);
 
       const message = JSON.parse(rawMessage) as MCPMessage;
-      const connectionData = this.connections.get(connectionId);
-
-      if (!connectionData) {
-        console.warn(`⚠️ No connection data found for ${connectionId}`);
-        return;
-      }
-
-      const { ws, connection } = connectionData;
+      console.log(`📨 [${connectionId}] Parsed message type:`, {
+        hasMethod: 'method' in message,
+        hasId: 'id' in message,
+        hasResult: 'result' in message,
+        hasError: 'error' in message,
+        method: (message as any).method,
+        id: (message as any).id
+      });
 
       // Handle different message types
       if ('method' in message) {
@@ -112,41 +121,56 @@ export class MCPServer {
           const response = await this.handleRequest(connection, message as MCPRequest);
           if (response) {
             const responseStr = JSON.stringify(response);
-            console.log(`📤 Sending response to ${connectionId}:`, responseStr);
+            console.log(`📤 [${connectionId}] Sending response:`, responseStr);
             ws.send(responseStr);
+          } else {
+            console.log(`📤 [${connectionId}] No response to send`);
           }
         } else {
-          // Notification
+          // Notification - these don't expect responses
+          console.log(`📨 [${connectionId}] Handling notification: ${message.method}`);
           await this.handleNotification(connection, message as MCPNotification);
         }
+      } else if ('result' in message || 'error' in message) {
+        // Response from client - this might be what's causing the Zod error
+        console.log(`📨 [${connectionId}] Received response from client:`, message);
       } else {
-        // Response (not expected from client in this implementation)
-        console.warn('Received response from client, ignoring');
+        console.warn(`⚠️ [${connectionId}] Unknown message type:`, message);
       }
     } catch (error) {
-      console.error(`Error handling message from ${connectionId}:`, error);
+      console.error(`❌ [${connectionId}] Error handling message:`, error);
+      console.error(`❌ [${connectionId}] Raw message:`, data.toString());
 
       // Try to extract id from the raw data if possible
       let messageId: string | number | undefined;
       try {
         const rawMessage = JSON.parse(data.toString());
         messageId = rawMessage.id;
-      } catch {
-        // If we can't parse the message, we can't get the id
+        console.log(`❌ [${connectionId}] Extracted ID:`, messageId);
+      } catch (parseError) {
+        console.error(`❌ [${connectionId}] Failed to parse for ID extraction:`, parseError);
       }
 
-      const errorResponse: MCPResponse = {
-        jsonrpc: '2.0',
-        id: messageId,
-        error: {
-          code: MCPErrorCode.ParseError,
-          message: 'Failed to parse message',
-        },
-      };
+      // Only send error response if we have a message ID (meaning it was a request)
+      if (messageId !== undefined) {
+        const errorResponse: MCPResponse = {
+          jsonrpc: '2.0',
+          id: messageId,
+          error: {
+            code: MCPErrorCode.ParseError,
+            message: 'Failed to parse message',
+          },
+        };
 
-      const connectionData = this.connections.get(connectionId);
-      if (connectionData) {
-        connectionData.ws.send(JSON.stringify(errorResponse));
+        try {
+          const errorStr = JSON.stringify(errorResponse);
+          console.log(`📤 [${connectionId}] Sending error response:`, errorStr);
+          ws.send(errorStr);
+        } catch (sendError) {
+          console.error(`❌ [${connectionId}] Failed to send error response:`, sendError);
+        }
+      } else {
+        console.log(`❌ [${connectionId}] No ID found, not sending error response`);
       }
     }
   }
