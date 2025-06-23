@@ -325,9 +325,8 @@ export class MCPServer {
     return {
       jsonrpc: '2.0',
       id: request.id,
-      error: {
-        code: MCPErrorCode.MethodNotFound,
-        message: 'Unknown method: resources/list',
+      result: {
+        resources: []
       },
     };
   }
@@ -340,9 +339,8 @@ export class MCPServer {
     return {
       jsonrpc: '2.0',
       id: request.id,
-      error: {
-        code: MCPErrorCode.MethodNotFound,
-        message: 'Unknown method: prompts/list',
+      result: {
+        prompts: []
       },
     };
   }

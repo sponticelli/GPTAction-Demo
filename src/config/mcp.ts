@@ -44,10 +44,14 @@ export const MCP_SERVER_INFO = {
     tools: {
       listChanged: false,
     },
+    resources: {
+      subscribe: false,
+      listChanged: false,
+    },
+    prompts: {
+      listChanged: false,
+    },
     logging: {},
-    // Explicitly indicate we don't support resources and prompts
-    resources: undefined,
-    prompts: undefined,
   },
 };
 

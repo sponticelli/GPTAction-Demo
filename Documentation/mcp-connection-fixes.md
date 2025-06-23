@@ -126,6 +126,56 @@ console.log(`📨 Received message from ${connectionId}:`, rawMessage);
 console.log(`📤 Sending response to ${connectionId}:`, responseStr);
 ```
 
+### 6. Fixed Method Responses (Additional Fix)
+
+**Problem**: Returning error responses for `resources/list` and `prompts/list` was causing validation issues.
+
+**Fix**: Changed to return proper empty result responses instead of errors:
+
+```typescript
+private async handleListResources(connection: MCPConnection, request: MCPRequest): Promise<MCPResponse> {
+  return {
+    jsonrpc: '2.0',
+    id: request.id,
+    result: {
+      resources: []  // Empty array instead of error
+    },
+  };
+}
+
+private async handleListPrompts(connection: MCPConnection, request: MCPRequest): Promise<MCPResponse> {
+  return {
+    jsonrpc: '2.0',
+    id: request.id,
+    result: {
+      prompts: []  // Empty array instead of error
+    },
+  };
+}
+```
+
+### 7. Updated Server Capabilities
+
+**File**: `src/config/mcp.ts`
+
+Added proper capabilities declaration for resources and prompts:
+
+```typescript
+capabilities: {
+  tools: {
+    listChanged: false,
+  },
+  resources: {
+    subscribe: false,
+    listChanged: false,
+  },
+  prompts: {
+    listChanged: false,
+  },
+  logging: {},
+},
+```
+
 ## Expected Results
 
 After these fixes, the MCP server should:
@@ -135,6 +185,7 @@ After these fixes, the MCP server should:
 3. ✅ Handle notifications without errors
 4. ✅ Provide better error messages and debugging information
 5. ✅ Eliminate the Zod validation errors
+6. ✅ Return proper empty results for unsupported methods instead of errors
 
 ## Testing
 
