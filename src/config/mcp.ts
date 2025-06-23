@@ -45,6 +45,9 @@ export const MCP_SERVER_INFO = {
       listChanged: false,
     },
     logging: {},
+    // Explicitly indicate we don't support resources and prompts
+    resources: undefined,
+    prompts: undefined,
   },
 };
 

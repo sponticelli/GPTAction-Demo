@@ -92,10 +92,14 @@ export class MCPServer {
    */
   private async handleMessage(connectionId: string, data: WebSocket.Data): Promise<void> {
     try {
-      const message = JSON.parse(data.toString()) as MCPMessage;
+      const rawMessage = data.toString();
+      console.log(`📨 Received message from ${connectionId}:`, rawMessage);
+
+      const message = JSON.parse(rawMessage) as MCPMessage;
       const connectionData = this.connections.get(connectionId);
-      
+
       if (!connectionData) {
+        console.warn(`⚠️ No connection data found for ${connectionId}`);
         return;
       }
 
@@ -107,7 +111,9 @@ export class MCPServer {
           // Request
           const response = await this.handleRequest(connection, message as MCPRequest);
           if (response) {
-            ws.send(JSON.stringify(response));
+            const responseStr = JSON.stringify(response);
+            console.log(`📤 Sending response to ${connectionId}:`, responseStr);
+            ws.send(responseStr);
           }
         } else {
           // Notification
@@ -119,9 +125,19 @@ export class MCPServer {
       }
     } catch (error) {
       console.error(`Error handling message from ${connectionId}:`, error);
-      
+
+      // Try to extract id from the raw data if possible
+      let messageId: string | number | undefined;
+      try {
+        const rawMessage = JSON.parse(data.toString());
+        messageId = rawMessage.id;
+      } catch {
+        // If we can't parse the message, we can't get the id
+      }
+
       const errorResponse: MCPResponse = {
         jsonrpc: '2.0',
+        id: messageId,
         error: {
           code: MCPErrorCode.ParseError,
           message: 'Failed to parse message',
@@ -153,13 +169,18 @@ export class MCPServer {
           return await this.handleListTools(connection, request as MCPListToolsRequest);
         case 'tools/call':
           return await this.handleCallTool(connection, request as MCPCallToolRequest);
+        case 'resources/list':
+          return await this.handleListResources(connection, request);
+        case 'prompts/list':
+          return await this.handleListPrompts(connection, request);
+
         default:
           return {
             jsonrpc: '2.0',
             id: request.id,
             error: {
               code: MCPErrorCode.MethodNotFound,
-              message: `Method '${request.method}' not found`,
+              message: `Unknown method: ${request.method}`,
             },
           };
       }
@@ -297,11 +318,47 @@ export class MCPServer {
   }
 
   /**
+   * Handle list resources request
+   */
+  private async handleListResources(connection: MCPConnection, request: MCPRequest): Promise<MCPResponse> {
+    // Return empty resources list since this server doesn't provide resources
+    return {
+      jsonrpc: '2.0',
+      id: request.id,
+      error: {
+        code: MCPErrorCode.MethodNotFound,
+        message: 'Unknown method: resources/list',
+      },
+    };
+  }
+
+  /**
+   * Handle list prompts request
+   */
+  private async handleListPrompts(connection: MCPConnection, request: MCPRequest): Promise<MCPResponse> {
+    // Return empty prompts list since this server doesn't provide prompts
+    return {
+      jsonrpc: '2.0',
+      id: request.id,
+      error: {
+        code: MCPErrorCode.MethodNotFound,
+        message: 'Unknown method: prompts/list',
+      },
+    };
+  }
+
+  /**
    * Handle notification
    */
   private async handleNotification(connection: MCPConnection, notification: MCPNotification): Promise<void> {
-    // Handle notifications if needed
-    console.log(`Received notification: ${notification.method}`);
+    switch (notification.method) {
+      case 'notifications/initialized':
+        console.log(`🔗 Client ${connection.id} initialized successfully`);
+        break;
+      default:
+        console.log(`Received notification: ${notification.method}`);
+        break;
+    }
   }
 
   /**
