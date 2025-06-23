@@ -44,7 +44,7 @@ export class MCPServer {
     this.wss.on('connection', this.handleConnection.bind(this));
     this.wss.on('error', this.handleServerError.bind(this));
 
-    console.log(`🔌 MCP Server initialized on path ${this.config.path}`);
+    console.log(`🔌 MCP Server initialized on path ${this.config.path} - v2.0`);
     
     // Start cleanup interval
     setInterval(() => this.authService.cleanup(), 60 * 60 * 1000); // Every hour
